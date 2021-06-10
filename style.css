@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Tajawal:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    place-items: center;
+    margin: 6% auto;
+}
+
+.inner-container{
+    display: inline-block;
+    text-align: center;
+    width: 400px;
+    height: 600px;
+    background-color: chocolate;
+}
+
+.header{
+    font-family: 'Tajawal', sans-serif;
+    color: white;
+}
+
+.header a{
+    text-decoration: none;
+    color: white;
+}
+
+.calc-box{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+#screen{
+    width: 250px;
+    height: 100px;
+}
+
+.container2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+.upper-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.numbers{
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 5px;
+    row-gap: 5px;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin-left: 5px;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
+    background-color: black;
+    color: white;
+    width: 80px;
+    height: 80px;
+}
+.box:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+
+.operations{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+#ubox1{
+    flex-grow: 0.6;
+}
+
+@media only screen and (min-device-width : 319px) and (max-device-width : 480px) {
+    .inner-container{
+        display: inline-block;
+        text-align: center;
+        width: 370px;
+        height: 580px;
+        background-color: chocolate;
+    }
+    .numbers{
+        margin: 2px;
+    }
+}
